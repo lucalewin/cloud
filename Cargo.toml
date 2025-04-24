@@ -1,0 +1,19 @@
+[workspace]
+resolver = "3"
+members = [
+    "backend",
+    "common",
+    "frontend",
+]
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
